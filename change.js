@@ -7,5 +7,6 @@ function changeText(elementId, newText) {
   }
 }
 //this is a comment
+//this is another comment
 // Example usage:
 // changeText('myElementId', 'New text content');
