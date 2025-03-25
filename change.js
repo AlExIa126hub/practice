@@ -6,6 +6,6 @@ function changeText(elementId, newText) {
     console.log('Element not found');
   }
 }
-
+//this is a comment
 // Example usage:
 // changeText('myElementId', 'New text content');
