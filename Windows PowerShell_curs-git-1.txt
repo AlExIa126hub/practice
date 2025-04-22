@@ -1,0 +1,812 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\cazal> ls
+
+
+    Directory: C:\Users\cazal
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        16/01/2025     20:09                .dotnet
+d-----        07/03/2025     14:50                .idlerc
+d-----        02/12/2024     18:04                .ms-ad
+d-----        16/01/2025     20:24                .templateengi
+                                                  ne
+d-----        17/03/2025     13:56                .vscode
+d-r---        30/01/2025     20:10                Contacts
+d-r---        08/03/2025     07:45                Desktop
+d-----        16/01/2025     20:07                Documents
+d-r---        25/03/2025     14:22                Downloads
+d-r---        30/01/2025     20:10                Favorites
+d-r---        30/01/2025     20:10                Links
+d-r---        30/01/2025     20:10                Music
+dar--l        24/03/2025     20:22                OneDrive
+d-r---        30/01/2025     20:10                Saved Games
+d-r---        30/01/2025     20:10                Searches
+d-----        16/01/2025     22:23                source
+d-r---        30/01/2025     20:10                Videos
+
+
+PS C:\Users\cazal> cd
+PS C:\Users\cazal> cd ~/Desktop/FACULTATE
+cd : Cannot find path 'C:\Users\cazal\Desktop\FACULTATE'
+because it does not exist.
+At line:1 char:1
++ cd ~/Desktop/FACULTATE
++ ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\cazal\
+   Desktop\FACULTATE:String) [Set-Location], ItemNotFoundExce
+  ption
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShel
+   l.Commands.SetLocationCommand
+
+PS C:\Users\cazal> cd git course
+Set-Location : A positional parameter cannot be found that
+accepts argument 'course'.
+At line:1 char:1
++ cd git course
++ ~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Locati
+   on], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Micr
+   osoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\cazal> cd git-course
+cd : Cannot find path 'C:\Users\cazal\git-course' because it
+does not exist.
+At line:1 char:1
++ cd git-course
++ ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\cazal\
+   git-course:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShel
+   l.Commands.SetLocationCommand
+
+PS C:\Users\cazal> Get-ChildItem
+
+
+    Directory: C:\Users\cazal
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        16/01/2025     20:09                .dotnet
+d-----        07/03/2025     14:50                .idlerc
+d-----        02/12/2024     18:04                .ms-ad
+d-----        16/01/2025     20:24                .templateengi
+                                                  ne
+d-----        17/03/2025     13:56                .vscode
+d-r---        30/01/2025     20:10                Contacts
+d-r---        08/03/2025     07:45                Desktop
+d-----        16/01/2025     20:07                Documents
+d-r---        25/03/2025     14:22                Downloads
+d-r---        30/01/2025     20:10                Favorites
+d-r---        30/01/2025     20:10                Links
+d-r---        30/01/2025     20:10                Music
+dar--l        24/03/2025     20:22                OneDrive
+d-r---        30/01/2025     20:10                Saved Games
+d-r---        30/01/2025     20:10                Searches
+d-----        16/01/2025     22:23                source
+d-r---        30/01/2025     20:10                Videos
+
+
+PS C:\Users\cazal> cd Desktop
+PS C:\Users\cazal\Desktop> ls
+
+
+    Directory: C:\Users\cazal\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        17/03/2025     13:01           2258 Discord.lnk
+-a----        13/12/2024     07:36           2371 Microsoft
+                                                  Teams.lnk
+-a----        01/12/2024     20:17           1395 Opera
+                                                  browser.lnk
+-a----        08/03/2025     07:45           1962 Zoom
+                                                  Workplace.lnk
+
+
+PS C:\Users\cazal\Desktop> cd..
+PS C:\Users\cazal> cd Documents
+PS C:\Users\cazal\Documents> ls
+
+
+    Directory: C:\Users\cazal\Documents
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        16/01/2025     20:07                IISExpress
+d-----        16/01/2025     20:07                My Web Sites
+
+
+PS C:\Users\cazal\Documents> Get-ChildItem
+
+
+    Directory: C:\Users\cazal\Documents
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        16/01/2025     20:07                IISExpress
+d-----        16/01/2025     20:07                My Web Sites
+
+
+PS C:\Users\cazal\Documents> cd..
+PS C:\Users\cazal> cd OneDrive
+PS C:\Users\cazal\OneDrive> ls
+
+
+    Directory: C:\Users\cazal\OneDrive
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----l        28/11/2024     22:19                Attachments
+d-r--l        20/03/2025     22:22                Documents
+d-r--l        12/03/2025     14:37                Pictures
+-a---l        08/02/2025     15:14        3571001 Curs4_Avutia
+                                                  nationala -
+                                                  partea 1.pptx
+-a---l        08/02/2025     15:14        3615865 Curs4_Avuția
+                                                  naționala -
+                                                  partea 2.pptx
+-a---l        08/02/2025     15:14        3463594 Curs4_Product
+                                                  ivitatea
+                                                  facotorilor
+                                                  de preoductie
+                                                  .pptx
+-a---l        08/02/2025     14:59        3184916 Cursuri
+                                                  merged 121
+                                                  pag.pdf
+-a---l        24/03/2025     20:22           1164 Personal
+                                                  Vault.lnk
+-a---l        08/02/2025     14:59        3782201 Seminare
+                                                  merged 40
+                                                  pag.pdf
+-a---l        08/02/2025     14:59          56590 Variantă
+                                                  examen.pdf
+
+
+PS C:\Users\cazal\OneDrive> ls -Directory
+
+
+    Directory: C:\Users\cazal\OneDrive
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----l        28/11/2024     22:19                Attachments
+d-r--l        20/03/2025     22:22                Documents
+d-r--l        12/03/2025     14:37                Pictures
+
+
+PS C:\Users\cazal\OneDrive> ls Directory
+ls : Cannot find path 'C:\Users\cazal\OneDrive\Directory' because it does not exist.
+At line:1 char:1
++ ls Directory
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\cazal\OneDrive\Directory:String) [Get-ChildItem], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+PS C:\Users\cazal\OneDrive> ls -Directory
+
+
+    Directory: C:\Users\cazal\OneDrive
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----l        28/11/2024     22:19                Attachments
+d-r--l        20/03/2025     22:22                Documents
+d-r--l        12/03/2025     14:37                Pictures
+
+
+PS C:\Users\cazal\OneDrive> cd Documents
+PS C:\Users\cazal\OneDrive\Documents> ls
+
+
+    Directory: C:\Users\cazal\OneDrive\Documents
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+da---l        01/12/2024     20:10                BIBLIOTECA DIGITALA
+da---l        01/12/2024     20:10                CREATII
+dar--l        10/01/2025     14:18                Custom Office Templates
+da---l        13/03/2025     14:44                FACULTATE
+da---l        11/12/2024     01:35                Foto
+da---l        03/03/2025     14:35                IMPORTANT
+da---l        01/12/2024     20:13                LANGUAGES
+da---l        01/12/2024     20:29                LICEU
+d----l        25/03/2025     14:22                OTHER
+dar--l        07/03/2025     16:00                Python
+dar--l        01/12/2024     20:08                SKINCARE
+da---l        01/12/2024     20:08                TRAVEL
+da---l        01/12/2024     20:08                University
+dar--l        16/01/2025     22:23                Visual Studio 2022
+da---l        17/03/2025     14:03                WEB DEVELOPMENT
+-a---l        13/01/2025     10:32        6536813 .Proiect BD.docx
+-a---l        09/01/2025     12:54          15394 Document.docx
+-a---l        13/01/2025     10:28        6514889 Proiect BD.docx
+-a---l        16/01/2025     17:15          15494 Rezumat Referate.docx
+-a---l        20/03/2025     22:22         129515 The evolution of the inflation rate in Romania.pdf
+-a---l        20/03/2025     22:19         142242 The evolution of the inflation rate in Romania.pptx
+
+
+PS C:\Users\cazal\OneDrive\Documents> cd FACULTATE
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE> LS
+
+
+    Directory: C:\Users\cazal\OneDrive\Documents\FACULTATE
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+da---l        01/12/2024     20:11                Acte
+da---l        01/12/2024     20:25                ANUL I
+da---l        19/03/2025     20:08                ANUL II
+da---l        17/03/2025     15:43                Erasmus
+da---l        02/12/2024     17:33                Informatii utile
+da---l        01/12/2024     20:12                Proiecte facultate
+-a---l        13/03/2025     14:44          21851 Phyton roadmap.docx
+
+
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE> cd ANUL II/Georgia
+Set-Location : A positional parameter cannot be found that accepts argument 'II/Georgia'.
+At line:1 char:1
++ cd ANUL II/Georgia
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE> cd /ANUL II/Georgia
+Set-Location : A positional parameter cannot be found that accepts argument 'II/Georgia'.
+At line:1 char:1
++ cd /ANUL II/Georgia
++ ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE> cd ~ANUL II/Georgia
+Set-Location : A positional parameter cannot be found that accepts argument 'II/Georgia'.
+At line:1 char:1
++ cd ~ANUL II/Georgia
++ ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE> ls
+
+
+    Directory: C:\Users\cazal\OneDrive\Documents\FACULTATE
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+da---l        01/12/2024     20:11                Acte
+da---l        01/12/2024     20:25                ANUL I
+da---l        19/03/2025     20:08                ANUL II
+da---l        17/03/2025     15:43                Erasmus
+da---l        02/12/2024     17:33                Informatii utile
+da---l        01/12/2024     20:12                Proiecte facultate
+-a---l        13/03/2025     14:44          21851 Phyton roadmap.docx
+
+
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE> cd ANUL II
+Set-Location : A positional parameter cannot be found that accepts argument 'II'.
+At line:1 char:1
++ cd ANUL II
++ ~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE> cd "ANUL II"
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II> ls
+
+
+    Directory: C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        20/01/2025     21:17                BAZE DE DATE
+d----l        21/03/2025     14:36                Georgia
+dar--l        04/02/2025     14:52                MICROECONOMIE
+dar--l        29/01/2025     21:28                POO
+dar--l        27/02/2025     14:33                STATISTICA
+
+
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II> cd Georgia/Java
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java> ls
+
+
+    Directory: C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        25/03/2025     15:04                git-course
+dar--l        25/03/2025     13:16                introduction
+d----l        25/03/2025     12:51                Lesson 2
+dar--l        25/03/2025     12:52                Lesson 3
+
+
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java> cd git-course
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> ls
+
+
+    Directory: C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---l        25/03/2025     15:05             24 file1.js
+-a---l        25/03/2025     15:05             28 file2.js
+
+
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> Test-Path $PROFILE
+False
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> New-Item -Type File -Path $PROFILE -Force
+
+
+    Directory: C:\Users\cazal\OneDrive\Documents\WindowsPowerShell
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        25/03/2025     15:24              0 Microsoft.PowerShell_profile.ps1
+
+
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> notepad $PROFILE
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> cd $git-course
+cd : Cannot find path 'C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course\-course' because it does not
+exist.
+At line:1 char:1
++ cd $git-course
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\cazal\...-course\-course:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> cd $"git-course"
+cd : Cannot find path 'C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course\$git-course' because it does not
+exist.
+At line:1 char:1
++ cd $"git-course"
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\cazal\...rse\$git-course:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> cd ${git-course}
+cd : Cannot process argument because the value of argument "path" is null. Change the value of argument "path" to a non-null value.
+At line:1 char:1
++ cd ${git-course}
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], PSArgumentNullException
+    + FullyQualifiedErrorId : ArgumentNull,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> cd..
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java> cd ${git-course}
+cd : Cannot process argument because the value of argument "path" is null. Change the value of argument "path" to a non-null value.
+At line:1 char:1
++ cd ${git-course}
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], PSArgumentNullException
+    + FullyQualifiedErrorId : ArgumentNull,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java> ${git-course} = "C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course"
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java> cd ${git-course}
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> ls
+
+
+    Directory: C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---l        25/03/2025     15:05             24 file1.js
+-a---l        25/03/2025     15:05             28 file2.js
+
+
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git init
+Initialized empty Git repository in C:/Users/cazal/OneDrive/Documents/FACULTATE/ANUL II/Georgia/Java/git-course/.git/
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file1.js
+        file2.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git add .
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   file1.js
+        new file:   file2.js
+
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git commit -m "add file1 and file 2"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'cazal@DESKTOP-U6F3MCI.(none)')
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git config --global user.email "cazale126@gmail.com"
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git config --global user.name "Cazan Alexia Ioana"
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git commit -m "add file1 and file2"
+[master (root-commit) 15c6e45] add file1 and file2
+ 2 files changed, 3 insertions(+)
+ create mode 100644 file1.js
+ create mode 100644 file2.js
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git config --global user.name "Alexia Cazan"
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git config --global user.email "cazale126@gmail.com"
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git log
+commit 15c6e45c2fc554d3e468bdbf831163a49e59a9ac (HEAD -> master)
+Author: Cazan Alexia Ioana <cazale126@gmail.com>
+Date:   Tue Mar 25 15:43:27 2025 +0400
+
+    add file1 and file2
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git add .
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git commit -m "add file 1, file 2 and change" --amend
+
+[master 5523ac3] add file 1, file 2 and change
+ Author: Cazan Alexia Ioana <cazale126@gmail.com>
+ Date: Tue Mar 25 15:43:27 2025 +0400
+ 3 files changed, 14 insertions(+)
+ create mode 100644 change.js
+ create mode 100644 file1.js
+ create mode 100644 file2.js
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git log
+commit 5523ac3a3ad7b4599849b96c0d8c60d8e7c22be1 (HEAD -> master)
+Author: Cazan Alexia Ioana <cazale126@gmail.com>
+Date:   Tue Mar 25 15:43:27 2025 +0400
+
+    add file 1, file 2 and change
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git reset .
+Unstaged changes after reset:
+M       file1.js
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git changes --file1
+git: 'changes' is not a git command. See 'git --help'.
+
+The most similar command is
+        diagnose
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git checkout --file1
+error: unknown option `file1'
+usage: git checkout [<options>] <branch>
+   or: git checkout [<options>] [<branch>] -- <file>...
+
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --[no-]guess          second guess 'git checkout <no-such-branch>' (default)
+    --[no-]overlay        use overlay mode (default)
+    -q, --[no-]quiet      suppress progress reporting
+    --[no-]recurse-submodules[=<checkout>]
+                          control recursive updating of submodules
+    --[no-]progress       force progress reporting
+    -m, --[no-]merge      perform a 3-way merge with the new branch
+    --[no-]conflict <style>
+                          conflict style (merge, diff3, or zdiff3)
+    -d, --[no-]detach     detach HEAD at named commit
+    -t, --[no-]track[=(direct|inherit)]
+                          set branch tracking configuration
+    -f, --[no-]force      force checkout (throw away local modifications)
+    --[no-]orphan <new-branch>
+                          new unborn branch
+    --[no-]overwrite-ignore
+                          update ignored files (default)
+    --[no-]ignore-other-worktrees
+                          do not check if another worktree is using this branch
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -p, --[no-]patch      select hunks interactively
+    --[no-]ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
+
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git checkout -- file1
+error: pathspec 'file1' did not match any file(s) known to git
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git checkout -- .
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git add .
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git commit -m "changes to file1, file 2, changes"
+[master 85176a4] changes to file1, file 2, changes
+ 3 files changed, 4 insertions(+), 2 deletions(-)
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git log
+commit 85176a41018de5b62867c171cda5c814e4cfd388 (HEAD -> master)
+Author: Alexia Cazan <cazale126@gmail.com>
+Date:   Tue Mar 25 16:01:09 2025 +0400
+
+    changes to file1, file 2, changes
+
+commit 5523ac3a3ad7b4599849b96c0d8c60d8e7c22be1
+Author: Cazan Alexia Ioana <cazale126@gmail.com>
+Date:   Tue Mar 25 15:43:27 2025 +0400
+
+    add file 1, file 2 and change
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git add .
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git commit -m "modify file1, file2, change"
+[master 8aa2d51] modify file1, file2, change
+ 3 files changed, 4 insertions(+), 2 deletions(-)
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git log
+commit 8aa2d514a5ecb482719b2a86756048f092241c78 (HEAD -> master)
+Author: Alexia Cazan <cazale126@gmail.com>
+Date:   Tue Mar 25 16:02:56 2025 +0400
+
+    modify file1, file2, change
+
+commit 85176a41018de5b62867c171cda5c814e4cfd388
+Author: Alexia Cazan <cazale126@gmail.com>
+Date:   Tue Mar 25 16:01:09 2025 +0400
+
+    changes to file1, file 2, changes
+
+commit 5523ac3a3ad7b4599849b96c0d8c60d8e7c22be1
+Author: Cazan Alexia Ioana <cazale126@gmail.com>
+Date:   Tue Mar 25 15:43:27 2025 +0400
+
+    add file 1, file 2 and change
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git status
+On branch master
+nothing to commit, working tree clean
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git checkout 85176a41018de5b62867c171cda5c814e4cfd388
+
+Note: switching to '85176a41018de5b62867c171cda5c814e4cfd388'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 85176a4 changes to file1, file 2, changes
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git log
+commit 85176a41018de5b62867c171cda5c814e4cfd388 (HEAD)
+Author: Alexia Cazan <cazale126@gmail.com>
+Date:   Tue Mar 25 16:01:09 2025 +0400
+
+    changes to file1, file 2, changes
+
+commit 5523ac3a3ad7b4599849b96c0d8c60d8e7c22be1
+Author: Cazan Alexia Ioana <cazale126@gmail.com>
+Date:   Tue Mar 25 15:43:27 2025 +0400
+
+    add file 1, file 2 and change
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git log -- all
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git log --all
+commit 8aa2d514a5ecb482719b2a86756048f092241c78 (master)
+Author: Alexia Cazan <cazale126@gmail.com>
+Date:   Tue Mar 25 16:02:56 2025 +0400
+
+    modify file1, file2, change
+
+commit 85176a41018de5b62867c171cda5c814e4cfd388 (HEAD)
+Author: Alexia Cazan <cazale126@gmail.com>
+Date:   Tue Mar 25 16:01:09 2025 +0400
+
+    changes to file1, file 2, changes
+
+commit 5523ac3a3ad7b4599849b96c0d8c60d8e7c22be1
+Author: Cazan Alexia Ioana <cazale126@gmail.com>
+Date:   Tue Mar 25 15:43:27 2025 +0400
+
+    add file 1, file 2 and change
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git checkout 8aa2d514a5ecb482719b2a86756048f092241c78
+
+Previous HEAD position was 85176a4 changes to file1, file 2, changes
+HEAD is now at 8aa2d51 modify file1, file2, change
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git log
+commit 8aa2d514a5ecb482719b2a86756048f092241c78 (HEAD, master)
+Author: Alexia Cazan <cazale126@gmail.com>
+Date:   Tue Mar 25 16:02:56 2025 +0400
+
+    modify file1, file2, change
+
+commit 85176a41018de5b62867c171cda5c814e4cfd388
+Author: Alexia Cazan <cazale126@gmail.com>
+Date:   Tue Mar 25 16:01:09 2025 +0400
+
+    changes to file1, file 2, changes
+
+commit 5523ac3a3ad7b4599849b96c0d8c60d8e7c22be1
+Author: Cazan Alexia Ioana <cazale126@gmail.com>
+Date:   Tue Mar 25 15:43:27 2025 +0400
+
+    add file 1, file 2 and change
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course>  git log --all --graph
+* commit 8aa2d514a5ecb482719b2a86756048f092241c78 (HEAD, master)
+| Author: Alexia Cazan <cazale126@gmail.com>
+| Date:   Tue Mar 25 16:02:56 2025 +0400
+|
+|     modify file1, file2, change
+|
+* commit 85176a41018de5b62867c171cda5c814e4cfd388
+| Author: Alexia Cazan <cazale126@gmail.com>
+| Date:   Tue Mar 25 16:01:09 2025 +0400
+|
+|     changes to file1, file 2, changes
+|
+* commit 5523ac3a3ad7b4599849b96c0d8c60d8e7c22be1
+  Author: Cazan Alexia Ioana <cazale126@gmail.com>
+  Date:   Tue Mar 25 15:43:27 2025 +0400
+
+      add file 1, file 2 and change
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git checkout 5523ac3a3ad7b4599849b96c0d8c60d8e7c22be1 .
+Updated 3 paths from f80ec02
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git log --all --graph
+* commit 8aa2d514a5ecb482719b2a86756048f092241c78 (HEAD, master)
+| Author: Alexia Cazan <cazale126@gmail.com>
+| Date:   Tue Mar 25 16:02:56 2025 +0400
+|
+|     modify file1, file2, change
+|
+* commit 85176a41018de5b62867c171cda5c814e4cfd388
+| Author: Alexia Cazan <cazale126@gmail.com>
+| Date:   Tue Mar 25 16:01:09 2025 +0400
+|
+|     changes to file1, file 2, changes
+|
+* commit 5523ac3a3ad7b4599849b96c0d8c60d8e7c22be1
+  Author: Cazan Alexia Ioana <cazale126@gmail.com>
+  Date:   Tue Mar 25 15:43:27 2025 +0400
+
+      add file 1, file 2 and change
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git status
+HEAD detached at 8aa2d51
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   change.js
+        modified:   file1.js
+        modified:   file2.js
+
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git commit -m "Version 1 restored"
+[detached HEAD 5ba5137] Version 1 restored
+ 3 files changed, 3 insertions(+), 7 deletions(-)
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git log
+commit 5ba5137fcb0297adc3ca8052d130a3f29b8d0c43 (HEAD)
+Author: Alexia Cazan <cazale126@gmail.com>
+Date:   Tue Mar 25 16:24:11 2025 +0400
+
+    Version 1 restored
+
+commit 8aa2d514a5ecb482719b2a86756048f092241c78 (master)
+Author: Alexia Cazan <cazale126@gmail.com>
+Date:   Tue Mar 25 16:02:56 2025 +0400
+
+    modify file1, file2, change
+
+commit 85176a41018de5b62867c171cda5c814e4cfd388
+Author: Alexia Cazan <cazale126@gmail.com>
+Date:   Tue Mar 25 16:01:09 2025 +0400
+
+    changes to file1, file 2, changes
+
+commit 5523ac3a3ad7b4599849b96c0d8c60d8e7c22be1
+Author: Cazan Alexia Ioana <cazale126@gmail.com>
+Date:   Tue Mar 25 15:43:27 2025 +0400
+
+    add file 1, file 2 and change
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git s
+git: 's' is not a git command. See 'git --help'.
+
+The most similar commands are
+        show
+        status
+        switch
+        lfs
+        svn
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git config --global alias.s status
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git s
+HEAD detached from 8aa2d51
+nothing to commit, working tree clean
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git log --all --graph
+* commit 5ba5137fcb0297adc3ca8052d130a3f29b8d0c43 (HEAD)
+| Author: Alexia Cazan <cazale126@gmail.com>
+| Date:   Tue Mar 25 16:24:11 2025 +0400
+|
+|     Version 1 restored
+|
+* commit 8aa2d514a5ecb482719b2a86756048f092241c78 (master)
+| Author: Alexia Cazan <cazale126@gmail.com>
+| Date:   Tue Mar 25 16:02:56 2025 +0400
+|
+|     modify file1, file2, change
+|
+* commit 85176a41018de5b62867c171cda5c814e4cfd388
+| Author: Alexia Cazan <cazale126@gmail.com>
+| Date:   Tue Mar 25 16:01:09 2025 +0400
+|
+|     changes to file1, file 2, changes
+|
+* commit 5523ac3a3ad7b4599849b96c0d8c60d8e7c22be1
+  Author: Cazan Alexia Ioana <cazale126@gmail.com>
+  Date:   Tue Mar 25 15:43:27 2025 +0400
+
+      add file 1, file 2 and change
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git s
+HEAD detached from 8aa2d51
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git add .
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git commit -m "add gitignore"
+[detached HEAD 4e1f26a] add gitignore
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course> git log
+commit 4e1f26a0fda04cc8e8f53fcaf803dd32acef7c2e (HEAD)
+Author: Alexia Cazan <cazale126@gmail.com>
+Date:   Tue Mar 25 16:29:57 2025 +0400
+
+    add gitignore
+
+commit 5ba5137fcb0297adc3ca8052d130a3f29b8d0c43
+Author: Alexia Cazan <cazale126@gmail.com>
+Date:   Tue Mar 25 16:24:11 2025 +0400
+
+    Version 1 restored
+
+commit 8aa2d514a5ecb482719b2a86756048f092241c78 (master)
+Author: Alexia Cazan <cazale126@gmail.com>
+Date:   Tue Mar 25 16:02:56 2025 +0400
+
+    modify file1, file2, change
+
+commit 85176a41018de5b62867c171cda5c814e4cfd388
+Author: Alexia Cazan <cazale126@gmail.com>
+Date:   Tue Mar 25 16:01:09 2025 +0400
+
+    changes to file1, file 2, changes
+
+commit 5523ac3a3ad7b4599849b96c0d8c60d8e7c22be1
+Author: Cazan Alexia Ioana <cazale126@gmail.com>
+Date:   Tue Mar 25 15:43:27 2025 +0400
+
+    add file 1, file 2 and change
+PS C:\Users\cazal\OneDrive\Documents\FACULTATE\ANUL II\Georgia\Java\git-course>
